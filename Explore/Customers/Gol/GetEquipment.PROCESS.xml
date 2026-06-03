@@ -1,0 +1,105 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>QdrOvMBu8zbgdwU-gt-369220-2026-06-02T14:25:34.693Z::pd.xml</types1:EntryId>
+      <types1:Name>GetEquipment</types1:Name>
+      <types1:ParentFlowIds>jogjER0XabeAzu2-gt-369230-2026-06-02T14:25:35.149Z::gt.xml</types1:ParentFlowIds>
+      <types1:MimeType>application/xml+process</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags>.anonymous</types1:Tags>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>service_admin_CICD_demo</types1:CreatedBy>
+      <types1:CreationDate>2026-06-02T14:25:35Z</types1:CreationDate>
+      <types1:ModifiedBy/>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>service_admin_CICD_demo</types1:PublishedBy>
+      <types1:PublicationDate>2026-06-02T15:38:30Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/spi.GetEquipment/GetEquipment.pd.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                  xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                  xmlns:list="urn:activevos:spi:list:functions"
+                  GUID="98UEURkXwNjgEiim8GrNqZ"
+                  displayName="GetEquipment"
+                  name="GetEquipment"
+                  overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags>.anonymous</tags>
+            <generator>Informatica Process Designer 11</generator>
+            <input>
+               <parameter description="Equipment unique ID"
+                          name="id"
+                          required="true"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+            </input>
+            <output>
+               <field description="" name="id " type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="createdAt" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="Equipname" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="Location" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="MeasurePoint" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="CostCenter" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </output>
+            <notes/>
+            <deployment suspendOnFault="false" tracingLevel="none">
+               <rest>
+                  <allowAnonymousAccess/>
+               </rest>
+            </deployment>
+            <flow id="a">
+               <start id="b">
+                  <link id="l1fkh4db" targetId="l1fkh4da"/>
+               </start>
+               <service id="l1fkh4da">
+                  <title>GetEquip</title>
+                  <serviceName>GetEquipment:GetEquipment</serviceName>
+                  <serviceGUID>523DjUErQshjIKxcxF2SSl</serviceGUID>
+                  <serviceInput>
+                     <parameter name="id" source="formula">
+                        <expression language="XQuery">$input.id </expression>
+                     </parameter>
+                  </serviceInput>
+                  <link id="l1fkh4dc" targetId="c"/>
+               </service>
+               <end id="c"/>
+            </flow>
+         </process>
+      </types1:Entry>
+      <types1:GUID>98UEURkXwNjgEiim8GrNqZ</types1:GUID>
+      <types1:DisplayName>GetEquipment</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2026-06-03T08:17:57.141Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
