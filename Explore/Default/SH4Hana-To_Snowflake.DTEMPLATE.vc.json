@@ -1,0 +1,3633 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "SH4Hana-To_Snowflake",
+    "specialCharacterSupport" : "false",
+    "links" : [
+      {
+        "link" : "Sap_S4Hana_Scr -> SnowFlake_RMPU_VRESB"
+      }
+    ],
+    "transformations" : [
+      {
+        "augmented" : "false",
+        "createTime" : "2022-04-06T06:10:11.960Z",
+        "name" : "Sap_S4Hana_Scr",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "true",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "MANDT"
+            },
+            "name" : "Client",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 3,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "RSNUM"
+            },
+            "name" : "Reservation",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "RSPOS"
+            },
+            "name" : "Item_number_of_reservation",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "RSART"
+            },
+            "name" : "Record_type",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "BDART"
+            },
+            "name" : "Requirement_type",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 2,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "XWAOK"
+            },
+            "name" : "Movement_allowed",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "MATNR"
+            },
+            "name" : "Material",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 40,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "WERKS"
+            },
+            "name" : "Plant",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "LGORT"
+            },
+            "name" : "Storage_location",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PRVBE"
+            },
+            "name" : "Prodn_Supply_Area",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CHARG"
+            },
+            "name" : "Batch",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PLPLA"
+            },
+            "name" : "Distr__differences",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SOBKZ"
+            },
+            "name" : "Special_Stock",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "BDTER"
+            },
+            "name" : "Requirements_date",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "BDMNG"
+            },
+            "name" : "Requirement_Quantity",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 13,
+            "scale" : 3
+          },
+          {
+            "adapterField" : {
+              "name" : "MEINS"
+            },
+            "name" : "Base_Unit_of_Measure",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 3,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SHKZG"
+            },
+            "name" : "Debit_Credit_ind",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ENMNG"
+            },
+            "name" : "Quantity_withdrawn",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 13,
+            "scale" : 3
+          },
+          {
+            "adapterField" : {
+              "name" : "ERFME"
+            },
+            "name" : "Unit_of_Entry",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 3,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PLNUM"
+            },
+            "name" : "Planned_Order",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "AUFNR"
+            },
+            "name" : "Order",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 12,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "BAUGR"
+            },
+            "name" : "Pegged_Requirement",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 40,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "KDAUF"
+            },
+            "name" : "Sales_Order",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "KDPOS"
+            },
+            "name" : "Sales_order_item",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 6,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "KDEIN"
+            },
+            "name" : "Sales_order_schedule",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "BWART"
+            },
+            "name" : "Movement_type",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 3,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "UMWRK"
+            },
+            "name" : "Receiving_plant",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "UMLGO"
+            },
+            "name" : "Receiving_stor__loc_",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "POSTP"
+            },
+            "name" : "Item_category",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "UMREZ"
+            },
+            "name" : "Counter",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 5,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "UMREN"
+            },
+            "name" : "Denominator",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 5,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SBTER"
+            },
+            "name" : "Latest_reqmts_date",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "VERTI"
+            },
+            "name" : "Distribution_Key",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "BEIKZ"
+            },
+            "name" : "Mat__Provision_Ind_",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "KZVBR"
+            },
+            "name" : "Consumption",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "AUFPL"
+            },
+            "name" : "Opertn_task_list_no_",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PLNFL"
+            },
+            "name" : "Sequence",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 6,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "VORNR"
+            },
+            "name" : "Activity",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "APLZL"
+            },
+            "name" : "Counter1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 8,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "RGEKZ"
+            },
+            "name" : "Backflush",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "VMENG"
+            },
+            "name" : "Qty__for_avail_check",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 15,
+            "scale" : 3
+          },
+          {
+            "adapterField" : {
+              "name" : "BERKZ"
+            },
+            "name" : "Mat_Staging_Indicat_",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "LGNUM"
+            },
+            "name" : "Warehouse_Number",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 3,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "LGTYP"
+            },
+            "name" : "Storage_Type",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 3,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "LGPLA"
+            },
+            "name" : "Storage_Bin",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "TBMNG"
+            },
+            "name" : "Transf_rqmnt_qty",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 13,
+            "scale" : 3
+          },
+          {
+            "adapterField" : {
+              "name" : "KZKUP"
+            },
+            "name" : "Co_product",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "AFPOS"
+            },
+            "name" : "Order_item_number",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "NO_DISP"
+            },
+            "name" : "Effec__mat__planning",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "BDZTP"
+            },
+            "name" : "Time_qty_required",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "FUNCT"
+            },
+            "name" : "Function",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 3,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "KZECH"
+            },
+            "name" : "Batch_entry",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SCHGT"
+            },
+            "name" : "Bulk_material",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "LIFNR"
+            },
+            "name" : "Vendor",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "KBNKZ"
+            },
+            "name" : "Kanban_Indicator",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PSPEL"
+            },
+            "name" : "WBS_Element",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 8,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "VRPLA"
+            },
+            "name" : "Plng_w_o_final_assy",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "KZBWS"
+            },
+            "name" : "Spec__stk_valuation",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@1rQ92Y1MX08lFkVwvRihQE",
+          "connectionName" : "SAP-S4HANA-Table-Connector-APJCLOUD_Windows",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "TOOLKIT",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "RMPU_VRESB",
+            "label" : "Generated Table for View",
+            "objectName" : "RMPU_VRESB",
+            "objectType" : "VIEW",
+            "path" : "RMPU_VRESB",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "MANDT",
+                "fieldType" : "CONNECTOR",
+                "label" : "Client",
+                "nativeName" : "MANDT",
+                "nativeType" : "clnt",
+                "original" : "false",
+                "precision" : 3,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "RSNUM",
+                "fieldType" : "CONNECTOR",
+                "label" : "Reservation",
+                "nativeName" : "RSNUM",
+                "nativeType" : "numc",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "RSPOS",
+                "fieldType" : "CONNECTOR",
+                "label" : "Item number of reservation",
+                "nativeName" : "RSPOS",
+                "nativeType" : "numc",
+                "original" : "false",
+                "precision" : 4,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "RSART",
+                "fieldType" : "CONNECTOR",
+                "label" : "Record type",
+                "nativeName" : "RSART",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "BDART",
+                "fieldType" : "CONNECTOR",
+                "label" : "Requirement type",
+                "nativeName" : "BDART",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 2,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "XWAOK",
+                "fieldType" : "CONNECTOR",
+                "label" : "Movement allowed",
+                "nativeName" : "XWAOK",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "MATNR",
+                "fieldType" : "CONNECTOR",
+                "label" : "Material",
+                "nativeName" : "MATNR",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 40,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "WERKS",
+                "fieldType" : "CONNECTOR",
+                "label" : "Plant",
+                "nativeName" : "WERKS",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 4,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "LGORT",
+                "fieldType" : "CONNECTOR",
+                "label" : "Storage location",
+                "nativeName" : "LGORT",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 4,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "PRVBE",
+                "fieldType" : "CONNECTOR",
+                "label" : "Prodn Supply Area",
+                "nativeName" : "PRVBE",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "CHARG",
+                "fieldType" : "CONNECTOR",
+                "label" : "Batch",
+                "nativeName" : "CHARG",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "PLPLA",
+                "fieldType" : "CONNECTOR",
+                "label" : "Distr. differences",
+                "nativeName" : "PLPLA",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "SOBKZ",
+                "fieldType" : "CONNECTOR",
+                "label" : "Special Stock",
+                "nativeName" : "SOBKZ",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "BDTER",
+                "fieldType" : "CONNECTOR",
+                "label" : "Requirements date",
+                "nativeName" : "BDTER",
+                "nativeType" : "dats",
+                "original" : "false",
+                "precision" : 8,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "BDMNG",
+                "fieldType" : "CONNECTOR",
+                "label" : "Requirement Quantity",
+                "nativeName" : "BDMNG",
+                "nativeType" : "quan",
+                "original" : "false",
+                "precision" : 13,
+                "scale" : 3,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "MEINS",
+                "fieldType" : "CONNECTOR",
+                "label" : "Base Unit of Measure",
+                "nativeName" : "MEINS",
+                "nativeType" : "unit",
+                "original" : "false",
+                "precision" : 3,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "SHKZG",
+                "fieldType" : "CONNECTOR",
+                "label" : "Debit/Credit ind",
+                "nativeName" : "SHKZG",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "ENMNG",
+                "fieldType" : "CONNECTOR",
+                "label" : "Quantity withdrawn",
+                "nativeName" : "ENMNG",
+                "nativeType" : "quan",
+                "original" : "false",
+                "precision" : 13,
+                "scale" : 3,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "ERFME",
+                "fieldType" : "CONNECTOR",
+                "label" : "Unit of Entry",
+                "nativeName" : "ERFME",
+                "nativeType" : "unit",
+                "original" : "false",
+                "precision" : 3,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "PLNUM",
+                "fieldType" : "CONNECTOR",
+                "label" : "Planned Order",
+                "nativeName" : "PLNUM",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "AUFNR",
+                "fieldType" : "CONNECTOR",
+                "label" : "Order",
+                "nativeName" : "AUFNR",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 12,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "BAUGR",
+                "fieldType" : "CONNECTOR",
+                "label" : "Pegged Requirement",
+                "nativeName" : "BAUGR",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 40,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "KDAUF",
+                "fieldType" : "CONNECTOR",
+                "label" : "Sales Order",
+                "nativeName" : "KDAUF",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "KDPOS",
+                "fieldType" : "CONNECTOR",
+                "label" : "Sales order item",
+                "nativeName" : "KDPOS",
+                "nativeType" : "numc",
+                "original" : "false",
+                "precision" : 6,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "KDEIN",
+                "fieldType" : "CONNECTOR",
+                "label" : "Sales order schedule",
+                "nativeName" : "KDEIN",
+                "nativeType" : "numc",
+                "original" : "false",
+                "precision" : 4,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "BWART",
+                "fieldType" : "CONNECTOR",
+                "label" : "Movement type",
+                "nativeName" : "BWART",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 3,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "UMWRK",
+                "fieldType" : "CONNECTOR",
+                "label" : "Receiving plant",
+                "nativeName" : "UMWRK",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 4,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "UMLGO",
+                "fieldType" : "CONNECTOR",
+                "label" : "Receiving stor. loc.",
+                "nativeName" : "UMLGO",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 4,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "POSTP",
+                "fieldType" : "CONNECTOR",
+                "label" : "Item category",
+                "nativeName" : "POSTP",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "UMREZ",
+                "fieldType" : "CONNECTOR",
+                "label" : "Counter",
+                "nativeName" : "UMREZ",
+                "nativeType" : "dec",
+                "original" : "false",
+                "precision" : 5,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "UMREN",
+                "fieldType" : "CONNECTOR",
+                "label" : "Denominator",
+                "nativeName" : "UMREN",
+                "nativeType" : "dec",
+                "original" : "false",
+                "precision" : 5,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "SBTER",
+                "fieldType" : "CONNECTOR",
+                "label" : "Latest reqmts date",
+                "nativeName" : "SBTER",
+                "nativeType" : "dats",
+                "original" : "false",
+                "precision" : 8,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "VERTI",
+                "fieldType" : "CONNECTOR",
+                "label" : "Distribution Key",
+                "nativeName" : "VERTI",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 4,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "BEIKZ",
+                "fieldType" : "CONNECTOR",
+                "label" : "Mat. Provision Ind.",
+                "nativeName" : "BEIKZ",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "KZVBR",
+                "fieldType" : "CONNECTOR",
+                "label" : "Consumption",
+                "nativeName" : "KZVBR",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "AUFPL",
+                "fieldType" : "CONNECTOR",
+                "label" : "Opertn task list no.",
+                "nativeName" : "AUFPL",
+                "nativeType" : "numc",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "PLNFL",
+                "fieldType" : "CONNECTOR",
+                "label" : "Sequence",
+                "nativeName" : "PLNFL",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 6,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "VORNR",
+                "fieldType" : "CONNECTOR",
+                "label" : "Activity",
+                "nativeName" : "VORNR",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 4,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "APLZL",
+                "fieldType" : "CONNECTOR",
+                "label" : "Counter",
+                "nativeName" : "APLZL",
+                "nativeType" : "numc",
+                "original" : "false",
+                "precision" : 8,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "RGEKZ",
+                "fieldType" : "CONNECTOR",
+                "label" : "Backflush",
+                "nativeName" : "RGEKZ",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "VMENG",
+                "fieldType" : "CONNECTOR",
+                "label" : "Qty. for avail.check",
+                "nativeName" : "VMENG",
+                "nativeType" : "quan",
+                "original" : "false",
+                "precision" : 15,
+                "scale" : 3,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "BERKZ",
+                "fieldType" : "CONNECTOR",
+                "label" : "Mat.Staging Indicat.",
+                "nativeName" : "BERKZ",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "LGNUM",
+                "fieldType" : "CONNECTOR",
+                "label" : "Warehouse Number",
+                "nativeName" : "LGNUM",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 3,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "LGTYP",
+                "fieldType" : "CONNECTOR",
+                "label" : "Storage Type",
+                "nativeName" : "LGTYP",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 3,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "LGPLA",
+                "fieldType" : "CONNECTOR",
+                "label" : "Storage Bin",
+                "nativeName" : "LGPLA",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "TBMNG",
+                "fieldType" : "CONNECTOR",
+                "label" : "Transf.rqmnt qty",
+                "nativeName" : "TBMNG",
+                "nativeType" : "quan",
+                "original" : "false",
+                "precision" : 13,
+                "scale" : 3,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "KZKUP",
+                "fieldType" : "CONNECTOR",
+                "label" : "Co-product",
+                "nativeName" : "KZKUP",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "AFPOS",
+                "fieldType" : "CONNECTOR",
+                "label" : "Order item number",
+                "nativeName" : "AFPOS",
+                "nativeType" : "numc",
+                "original" : "false",
+                "precision" : 4,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "NO_DISP",
+                "fieldType" : "CONNECTOR",
+                "label" : "Effec. mat. planning",
+                "nativeName" : "NO_DISP",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "BDZTP",
+                "fieldType" : "CONNECTOR",
+                "label" : "Time qty required",
+                "nativeName" : "BDZTP",
+                "nativeType" : "tims",
+                "original" : "false",
+                "precision" : 6,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "FUNCT",
+                "fieldType" : "CONNECTOR",
+                "label" : "Function",
+                "nativeName" : "FUNCT",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 3,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "KZECH",
+                "fieldType" : "CONNECTOR",
+                "label" : "Batch entry",
+                "nativeName" : "KZECH",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "SCHGT",
+                "fieldType" : "CONNECTOR",
+                "label" : "Bulk material",
+                "nativeName" : "SCHGT",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "LIFNR",
+                "fieldType" : "CONNECTOR",
+                "label" : "Vendor",
+                "nativeName" : "LIFNR",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "KBNKZ",
+                "fieldType" : "CONNECTOR",
+                "label" : "Kanban Indicator",
+                "nativeName" : "KBNKZ",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "PSPEL",
+                "fieldType" : "CONNECTOR",
+                "label" : "WBS Element",
+                "nativeName" : "PSPEL",
+                "nativeType" : "numc",
+                "original" : "false",
+                "precision" : 8,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "VRPLA",
+                "fieldType" : "CONNECTOR",
+                "label" : "Plng w/o final assy",
+                "nativeName" : "VRPLA",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "KZBWS",
+                "fieldType" : "CONNECTOR",
+                "label" : "Spec. stk valuation",
+                "nativeName" : "KZBWS",
+                "nativeType" : "char",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              }
+            ]
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "augmented" : "false",
+        "createTime" : "2022-04-06T06:10:11.961Z",
+        "name" : "SnowFlake_RMPU_VRESB",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "true",
+        "fieldMappingMode" : "BY_NAME",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "targetFieldsOrdered" : "false",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "MANDT"
+            },
+            "name" : "MANDT",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 3,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "RSNUM"
+            },
+            "name" : "RSNUM",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "RSPOS"
+            },
+            "name" : "RSPOS",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "RSART"
+            },
+            "name" : "RSART",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "BDART"
+            },
+            "name" : "BDART",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 2,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "XWAOK"
+            },
+            "name" : "XWAOK",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "MATNR"
+            },
+            "name" : "MATNR",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 40,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "WERKS"
+            },
+            "name" : "WERKS",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "LGORT"
+            },
+            "name" : "LGORT",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PRVBE"
+            },
+            "name" : "PRVBE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CHARG"
+            },
+            "name" : "CHARG",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PLPLA"
+            },
+            "name" : "PLPLA",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SOBKZ"
+            },
+            "name" : "SOBKZ",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "BDTER"
+            },
+            "name" : "BDTER",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "BDMNG"
+            },
+            "name" : "BDMNG",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 13,
+            "scale" : 3
+          },
+          {
+            "adapterField" : {
+              "name" : "MEINS"
+            },
+            "name" : "MEINS",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 3,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SHKZG"
+            },
+            "name" : "SHKZG",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ENMNG"
+            },
+            "name" : "ENMNG",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 13,
+            "scale" : 3
+          },
+          {
+            "adapterField" : {
+              "name" : "ERFME"
+            },
+            "name" : "ERFME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 3,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PLNUM"
+            },
+            "name" : "PLNUM",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "AUFNR"
+            },
+            "name" : "AUFNR",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 12,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "BAUGR"
+            },
+            "name" : "BAUGR",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 40,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "KDAUF"
+            },
+            "name" : "KDAUF",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "KDPOS"
+            },
+            "name" : "KDPOS",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 6,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "KDEIN"
+            },
+            "name" : "KDEIN",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "BWART"
+            },
+            "name" : "BWART",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 3,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "UMWRK"
+            },
+            "name" : "UMWRK",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "UMLGO"
+            },
+            "name" : "UMLGO",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "POSTP"
+            },
+            "name" : "POSTP",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "UMREZ"
+            },
+            "name" : "UMREZ",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 5,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "UMREN"
+            },
+            "name" : "UMREN",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 5,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SBTER"
+            },
+            "name" : "SBTER",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "VERTI"
+            },
+            "name" : "VERTI",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "BEIKZ"
+            },
+            "name" : "BEIKZ",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "KZVBR"
+            },
+            "name" : "KZVBR",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "AUFPL"
+            },
+            "name" : "AUFPL",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PLNFL"
+            },
+            "name" : "PLNFL",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 6,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "VORNR"
+            },
+            "name" : "VORNR",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "APLZL"
+            },
+            "name" : "APLZL",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 8,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "RGEKZ"
+            },
+            "name" : "RGEKZ",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "VMENG"
+            },
+            "name" : "VMENG",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 15,
+            "scale" : 3
+          },
+          {
+            "adapterField" : {
+              "name" : "BERKZ"
+            },
+            "name" : "BERKZ",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "LGNUM"
+            },
+            "name" : "LGNUM",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 3,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "LGTYP"
+            },
+            "name" : "LGTYP",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 3,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "LGPLA"
+            },
+            "name" : "LGPLA",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "TBMNG"
+            },
+            "name" : "TBMNG",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 13,
+            "scale" : 3
+          },
+          {
+            "adapterField" : {
+              "name" : "KZKUP"
+            },
+            "name" : "KZKUP",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "AFPOS"
+            },
+            "name" : "AFPOS",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "NO_DISP"
+            },
+            "name" : "NO_DISP",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "BDZTP"
+            },
+            "name" : "BDZTP",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "FUNCT"
+            },
+            "name" : "FUNCT",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 3,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "KZECH"
+            },
+            "name" : "KZECH",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SCHGT"
+            },
+            "name" : "SCHGT",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "LIFNR"
+            },
+            "name" : "LIFNR",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "KBNKZ"
+            },
+            "name" : "KBNKZ",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PSPEL"
+            },
+            "name" : "PSPEL",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 8,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "VRPLA"
+            },
+            "name" : "VRPLA",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "KZBWS"
+            },
+            "name" : "KZBWS",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@dNin2glscIokq0Gyolh2Oc",
+          "connectionName" : "Snowflake-CDW-v2-informaticapartner-DEMO_WH",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "TOOLKIT",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "APAC_CDP_DEMO_DB/RMPU_VRESB",
+            "label" : "APAC_CDP_DEMO_DB/RMPU_VRESB",
+            "path" : "APAC_CDP_DEMO_DB/RMPU_VRESB",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "MANDT",
+                "fieldType" : "CONNECTOR",
+                "label" : "MANDT",
+                "nativeName" : "MANDT",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 3,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "RSNUM",
+                "fieldType" : "CONNECTOR",
+                "label" : "RSNUM",
+                "nativeName" : "RSNUM",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "RSPOS",
+                "fieldType" : "CONNECTOR",
+                "label" : "RSPOS",
+                "nativeName" : "RSPOS",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "RSART",
+                "fieldType" : "CONNECTOR",
+                "label" : "RSART",
+                "nativeName" : "RSART",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "BDART",
+                "fieldType" : "CONNECTOR",
+                "label" : "BDART",
+                "nativeName" : "BDART",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 2,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "XWAOK",
+                "fieldType" : "CONNECTOR",
+                "label" : "XWAOK",
+                "nativeName" : "XWAOK",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "MATNR",
+                "fieldType" : "CONNECTOR",
+                "label" : "MATNR",
+                "nativeName" : "MATNR",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 40,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "WERKS",
+                "fieldType" : "CONNECTOR",
+                "label" : "WERKS",
+                "nativeName" : "WERKS",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "LGORT",
+                "fieldType" : "CONNECTOR",
+                "label" : "LGORT",
+                "nativeName" : "LGORT",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "PRVBE",
+                "fieldType" : "CONNECTOR",
+                "label" : "PRVBE",
+                "nativeName" : "PRVBE",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "CHARG",
+                "fieldType" : "CONNECTOR",
+                "label" : "CHARG",
+                "nativeName" : "CHARG",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "PLPLA",
+                "fieldType" : "CONNECTOR",
+                "label" : "PLPLA",
+                "nativeName" : "PLPLA",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "SOBKZ",
+                "fieldType" : "CONNECTOR",
+                "label" : "SOBKZ",
+                "nativeName" : "SOBKZ",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "BDTER",
+                "fieldType" : "CONNECTOR",
+                "label" : "BDTER",
+                "nativeName" : "BDTER",
+                "nativeType" : "timestampntz",
+                "original" : "false",
+                "precision" : 29,
+                "scale" : 9,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "BDMNG",
+                "fieldType" : "CONNECTOR",
+                "label" : "BDMNG",
+                "nativeName" : "BDMNG",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 13,
+                "scale" : 3,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "MEINS",
+                "fieldType" : "CONNECTOR",
+                "label" : "MEINS",
+                "nativeName" : "MEINS",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 3,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "SHKZG",
+                "fieldType" : "CONNECTOR",
+                "label" : "SHKZG",
+                "nativeName" : "SHKZG",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "ENMNG",
+                "fieldType" : "CONNECTOR",
+                "label" : "ENMNG",
+                "nativeName" : "ENMNG",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 13,
+                "scale" : 3,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "ERFME",
+                "fieldType" : "CONNECTOR",
+                "label" : "ERFME",
+                "nativeName" : "ERFME",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 3,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "PLNUM",
+                "fieldType" : "CONNECTOR",
+                "label" : "PLNUM",
+                "nativeName" : "PLNUM",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "AUFNR",
+                "fieldType" : "CONNECTOR",
+                "label" : "AUFNR",
+                "nativeName" : "AUFNR",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 12,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "BAUGR",
+                "fieldType" : "CONNECTOR",
+                "label" : "BAUGR",
+                "nativeName" : "BAUGR",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 40,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "KDAUF",
+                "fieldType" : "CONNECTOR",
+                "label" : "KDAUF",
+                "nativeName" : "KDAUF",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "KDPOS",
+                "fieldType" : "CONNECTOR",
+                "label" : "KDPOS",
+                "nativeName" : "KDPOS",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 6,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "KDEIN",
+                "fieldType" : "CONNECTOR",
+                "label" : "KDEIN",
+                "nativeName" : "KDEIN",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "BWART",
+                "fieldType" : "CONNECTOR",
+                "label" : "BWART",
+                "nativeName" : "BWART",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 3,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "UMWRK",
+                "fieldType" : "CONNECTOR",
+                "label" : "UMWRK",
+                "nativeName" : "UMWRK",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "UMLGO",
+                "fieldType" : "CONNECTOR",
+                "label" : "UMLGO",
+                "nativeName" : "UMLGO",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "POSTP",
+                "fieldType" : "CONNECTOR",
+                "label" : "POSTP",
+                "nativeName" : "POSTP",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "UMREZ",
+                "fieldType" : "CONNECTOR",
+                "label" : "UMREZ",
+                "nativeName" : "UMREZ",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 5,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "UMREN",
+                "fieldType" : "CONNECTOR",
+                "label" : "UMREN",
+                "nativeName" : "UMREN",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 5,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "SBTER",
+                "fieldType" : "CONNECTOR",
+                "label" : "SBTER",
+                "nativeName" : "SBTER",
+                "nativeType" : "timestampntz",
+                "original" : "false",
+                "precision" : 29,
+                "scale" : 9,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "VERTI",
+                "fieldType" : "CONNECTOR",
+                "label" : "VERTI",
+                "nativeName" : "VERTI",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "BEIKZ",
+                "fieldType" : "CONNECTOR",
+                "label" : "BEIKZ",
+                "nativeName" : "BEIKZ",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "KZVBR",
+                "fieldType" : "CONNECTOR",
+                "label" : "KZVBR",
+                "nativeName" : "KZVBR",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "AUFPL",
+                "fieldType" : "CONNECTOR",
+                "label" : "AUFPL",
+                "nativeName" : "AUFPL",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "PLNFL",
+                "fieldType" : "CONNECTOR",
+                "label" : "PLNFL",
+                "nativeName" : "PLNFL",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 6,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "VORNR",
+                "fieldType" : "CONNECTOR",
+                "label" : "VORNR",
+                "nativeName" : "VORNR",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "APLZL",
+                "fieldType" : "CONNECTOR",
+                "label" : "APLZL",
+                "nativeName" : "APLZL",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 8,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "RGEKZ",
+                "fieldType" : "CONNECTOR",
+                "label" : "RGEKZ",
+                "nativeName" : "RGEKZ",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "VMENG",
+                "fieldType" : "CONNECTOR",
+                "label" : "VMENG",
+                "nativeName" : "VMENG",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 15,
+                "scale" : 3,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "BERKZ",
+                "fieldType" : "CONNECTOR",
+                "label" : "BERKZ",
+                "nativeName" : "BERKZ",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "LGNUM",
+                "fieldType" : "CONNECTOR",
+                "label" : "LGNUM",
+                "nativeName" : "LGNUM",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 3,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "LGTYP",
+                "fieldType" : "CONNECTOR",
+                "label" : "LGTYP",
+                "nativeName" : "LGTYP",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 3,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "LGPLA",
+                "fieldType" : "CONNECTOR",
+                "label" : "LGPLA",
+                "nativeName" : "LGPLA",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "TBMNG",
+                "fieldType" : "CONNECTOR",
+                "label" : "TBMNG",
+                "nativeName" : "TBMNG",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 13,
+                "scale" : 3,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "KZKUP",
+                "fieldType" : "CONNECTOR",
+                "label" : "KZKUP",
+                "nativeName" : "KZKUP",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "AFPOS",
+                "fieldType" : "CONNECTOR",
+                "label" : "AFPOS",
+                "nativeName" : "AFPOS",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "NO_DISP",
+                "fieldType" : "CONNECTOR",
+                "label" : "NO_DISP",
+                "nativeName" : "NO_DISP",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "BDZTP",
+                "fieldType" : "CONNECTOR",
+                "label" : "BDZTP",
+                "nativeName" : "BDZTP",
+                "nativeType" : "timestampntz",
+                "original" : "false",
+                "precision" : 29,
+                "scale" : 9,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "FUNCT",
+                "fieldType" : "CONNECTOR",
+                "label" : "FUNCT",
+                "nativeName" : "FUNCT",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 3,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "KZECH",
+                "fieldType" : "CONNECTOR",
+                "label" : "KZECH",
+                "nativeName" : "KZECH",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "SCHGT",
+                "fieldType" : "CONNECTOR",
+                "label" : "SCHGT",
+                "nativeName" : "SCHGT",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "LIFNR",
+                "fieldType" : "CONNECTOR",
+                "label" : "LIFNR",
+                "nativeName" : "LIFNR",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "KBNKZ",
+                "fieldType" : "CONNECTOR",
+                "label" : "KBNKZ",
+                "nativeName" : "KBNKZ",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "PSPEL",
+                "fieldType" : "CONNECTOR",
+                "label" : "PSPEL",
+                "nativeName" : "PSPEL",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 8,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "VRPLA",
+                "fieldType" : "CONNECTOR",
+                "label" : "VRPLA",
+                "nativeName" : "VRPLA",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              },
+              {
+                "name" : "KZBWS",
+                "fieldType" : "CONNECTOR",
+                "label" : "KZBWS",
+                "nativeName" : "KZBWS",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RMPU_VRESB"
+                  }
+                ]
+              }
+            ],
+            "objectAttributes" : [
+              {
+                "name" : "tableType",
+                "value" : "TABLE"
+              },
+              {
+                "name" : "parent",
+                "value" : "APAC_CDP_DEMO_DB"
+              }
+            ]
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false",
+            "tgtObjectAttributes" : [
+              {
+                "name" : "tableType",
+                "value" : "TABLE"
+              },
+              {
+                "name" : "parent",
+                "value" : "APAC_CDP_DEMO_DB"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2026-06-03 07:17:53 PDT"
+}
