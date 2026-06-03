@@ -3,18 +3,24 @@
     "allowMaxFieldLength" : "false",
     "bigIntConvertType" : "ONLY_BIGINT",
     "documentType" : "MAPPING",
-    "name" : "SH4Hana-To_Snowflake",
+    "name" : "m_ora_to_synapse",
     "specialCharacterSupport" : "false",
     "links" : [
       {
-        "link" : "Sap_S4Hana_Scr -> SnowFlake_RMPU_VRESB"
+        "link" : "Oracle -> Expression"
+      },
+      {
+        "link" : "Filter -> Synapse"
+      },
+      {
+        "link" : "Expression -> Filter"
       }
     ],
     "transformations" : [
       {
         "augmented" : "false",
         "createTime" : "2022-04-06T06:10:11.960Z",
-        "name" : "Sap_S4Hana_Scr",
+        "name" : "Oracle",
         "advancedProperties" : [
           {
             "name" : "Tracing Level",
@@ -1632,7 +1638,7 @@
       {
         "augmented" : "false",
         "createTime" : "2022-04-06T06:10:11.961Z",
-        "name" : "SnowFlake_RMPU_VRESB",
+        "name" : "Synapse",
         "advancedProperties" : [
           {
             "name" : "Forward Rejected Rows",
@@ -3626,8 +3632,52 @@
             ]
           }
         }
+      },
+      {
+        "augmented" : "false",
+        "createTime" : "2026-06-03T14:23:32.989Z",
+        "name" : "Expression",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "windowConfigurationEnabled" : "false",
+        "windowSpec" : {
+          "allRowsFollowing" : "false",
+          "allRowsPreceding" : "false",
+          "endOffset" : 0,
+          "startOffset" : 0,
+          "partitionKeys" : null
+        }
+      },
+      {
+        "augmented" : "false",
+        "createTime" : "2026-06-03T14:23:35.800Z",
+        "name" : "Filter",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ]
       }
     ]
   },
-  "vcsExportTime" : "2026-06-03 07:28:11 PDT"
+  "vcsExportTime" : "2026-06-03 07:28:12 PDT"
 }

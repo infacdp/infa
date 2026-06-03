@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
-    "id" : "8Jc6w7sv6cRcbtDlbi2FO8",
-    "name" : "SH4Hana-To_Snowflake",
+    "id" : "8olinfloEOmfmibyi3tF4t",
+    "name" : "m_ora_to_synapse",
     "type" : "DTEMPLATE",
     "metadata" : {
       "modelVersion" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "010V0V17000000000004"
+        "repoHandle" : "010V0V17000000000005"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,7 +23,7 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2026-06-03T14:28:12.208Z",
+  "updateTime" : "2026-06-03T14:28:12.209Z",
   "objectRefs" : [ {
     "id" : "dNin2glscIokq0Gyolh2Oc",
     "name" : "Snowflake-CDW-v2-informaticapartner-DEMO_WH",

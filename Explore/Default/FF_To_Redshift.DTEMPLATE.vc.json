@@ -3,18 +3,21 @@
     "allowMaxFieldLength" : "false",
     "bigIntConvertType" : "ONLY_BIGINT",
     "documentType" : "MAPPING",
-    "name" : "SH4Hana-To_Snowflake",
+    "name" : "FF_To_Redshift",
     "specialCharacterSupport" : "false",
     "links" : [
       {
-        "link" : "Sap_S4Hana_Scr -> SnowFlake_RMPU_VRESB"
+        "link" : "Filter -> Redshift"
+      },
+      {
+        "link" : "FF -> Filter"
       }
     ],
     "transformations" : [
       {
         "augmented" : "false",
         "createTime" : "2022-04-06T06:10:11.960Z",
-        "name" : "Sap_S4Hana_Scr",
+        "name" : "FF",
         "advancedProperties" : [
           {
             "name" : "Tracing Level",
@@ -1632,7 +1635,7 @@
       {
         "augmented" : "false",
         "createTime" : "2022-04-06T06:10:11.961Z",
-        "name" : "SnowFlake_RMPU_VRESB",
+        "name" : "Redshift",
         "advancedProperties" : [
           {
             "name" : "Forward Rejected Rows",
@@ -3626,6 +3629,24 @@
             ]
           }
         }
+      },
+      {
+        "augmented" : "false",
+        "createTime" : "2026-06-03T14:22:45.233Z",
+        "name" : "Filter",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ]
       }
     ]
   },
