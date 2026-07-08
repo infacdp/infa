@@ -1,0 +1,1253 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "Mappingtestcommithash",
+    "specialCharacterSupport" : "false",
+    "links" : [
+      {
+        "link" : "Source -> Target"
+      }
+    ],
+    "transformations" : [
+      {
+        "augmented" : "false",
+        "createTime" : "2026-07-08T19:20:51.734Z",
+        "name" : "Source",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "customerId"
+            },
+            "name" : "customerId",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "orderNumber"
+            },
+            "name" : "orderNumber",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "orderDate"
+            },
+            "name" : "orderDate",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "requiredDate"
+            },
+            "name" : "requiredDate",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "shippedDate"
+            },
+            "name" : "shippedDate",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "status"
+            },
+            "name" : "status",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "comments"
+            },
+            "name" : "comments",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@8uAtoiODxbvfi44PBc3lwH",
+          "connectionName" : "Sample CSV Connection",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "TOOLKIT",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "My_Orders",
+            "label" : "My_Orders",
+            "objectName" : "My_Orders",
+            "objectType" : "Standard Records",
+            "path" : "My_Orders",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "customerId",
+                "fieldType" : "CONNECTOR",
+                "label" : "customerId",
+                "nativeName" : "customerId",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Orders"
+                  }
+                ]
+              },
+              {
+                "name" : "orderNumber",
+                "fieldType" : "CONNECTOR",
+                "label" : "orderNumber",
+                "nativeName" : "orderNumber",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Orders"
+                  }
+                ]
+              },
+              {
+                "name" : "orderDate",
+                "fieldType" : "CONNECTOR",
+                "label" : "orderDate",
+                "nativeName" : "orderDate",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Orders"
+                  }
+                ]
+              },
+              {
+                "name" : "requiredDate",
+                "fieldType" : "CONNECTOR",
+                "label" : "requiredDate",
+                "nativeName" : "requiredDate",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Orders"
+                  }
+                ]
+              },
+              {
+                "name" : "shippedDate",
+                "fieldType" : "CONNECTOR",
+                "label" : "shippedDate",
+                "nativeName" : "shippedDate",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Orders"
+                  }
+                ]
+              },
+              {
+                "name" : "status",
+                "fieldType" : "CONNECTOR",
+                "label" : "status",
+                "nativeName" : "status",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Orders"
+                  }
+                ]
+              },
+              {
+                "name" : "comments",
+                "fieldType" : "CONNECTOR",
+                "label" : "comments",
+                "nativeName" : "comments",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Orders"
+                  }
+                ]
+              }
+            ]
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "augmented" : "false",
+        "createTime" : "2026-07-08T19:20:51.734Z",
+        "name" : "Target",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "false",
+        "fieldMappingMode" : "MANUAL",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "targetFieldsOrdered" : "false",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "Company"
+            },
+            "name" : "Company",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "billingStreet"
+            },
+            "name" : "billingStreet",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "billingCity"
+            },
+            "name" : "billingCity",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "billingState"
+            },
+            "name" : "billingState",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "billingPostalCode"
+            },
+            "name" : "billingPostalCode",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "billingCountry"
+            },
+            "name" : "billingCountry",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "website"
+            },
+            "name" : "website",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "id"
+            },
+            "name" : "id",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "personType"
+            },
+            "name" : "personType",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "mktoIsPartner"
+            },
+            "name" : "mktoIsPartner",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "isLead"
+            },
+            "name" : "isLead",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "mktoIsCustomer"
+            },
+            "name" : "mktoIsCustomer",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "isAnonymous"
+            },
+            "name" : "isAnonymous",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "salutation"
+            },
+            "name" : "salutation",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "firstName"
+            },
+            "name" : "firstName",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "middleName"
+            },
+            "name" : "middleName",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "lastName"
+            },
+            "name" : "lastName",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "email"
+            },
+            "name" : "email",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "phone"
+            },
+            "name" : "phone",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "mobilePhone"
+            },
+            "name" : "mobilePhone",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "fax"
+            },
+            "name" : "fax",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "title"
+            },
+            "name" : "title",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "contactCompany"
+            },
+            "name" : "contactCompany",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "originalSourceType"
+            },
+            "name" : "originalSourceType",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "originalSourceInfo"
+            },
+            "name" : "originalSourceInfo",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "registrationSourceType"
+            },
+            "name" : "registrationSourceType",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "registrationSourceInfo"
+            },
+            "name" : "registrationSourceInfo",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "unsubscribed"
+            },
+            "name" : "unsubscribed",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "unsubscribedReason"
+            },
+            "name" : "unsubscribedReason",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "doNotCall"
+            },
+            "name" : "doNotCall",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "VisitedWebsite"
+            },
+            "name" : "VisitedWebsite",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "AttendedWEbinar"
+            },
+            "name" : "AttendedWEbinar",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "AttendedTradeShow"
+            },
+            "name" : "AttendedTradeShow",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ClickedAD"
+            },
+            "name" : "ClickedAD",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@2nlzs5XrDVhjqZerBIv4oY",
+          "connectionName" : "Sample S3 Connection",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "TOOLKIT",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "My_Leads",
+            "label" : "My_Leads",
+            "objectName" : "My_Leads",
+            "objectType" : "Standard Records",
+            "path" : "My_Leads",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "Company",
+                "fieldType" : "CONNECTOR",
+                "label" : "Company",
+                "nativeName" : "Company",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "billingStreet",
+                "fieldType" : "CONNECTOR",
+                "label" : "billingStreet",
+                "nativeName" : "billingStreet",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "billingCity",
+                "fieldType" : "CONNECTOR",
+                "label" : "billingCity",
+                "nativeName" : "billingCity",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "billingState",
+                "fieldType" : "CONNECTOR",
+                "label" : "billingState",
+                "nativeName" : "billingState",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "billingPostalCode",
+                "fieldType" : "CONNECTOR",
+                "label" : "billingPostalCode",
+                "nativeName" : "billingPostalCode",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "billingCountry",
+                "fieldType" : "CONNECTOR",
+                "label" : "billingCountry",
+                "nativeName" : "billingCountry",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "website",
+                "fieldType" : "CONNECTOR",
+                "label" : "website",
+                "nativeName" : "website",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "id",
+                "fieldType" : "CONNECTOR",
+                "label" : "id",
+                "nativeName" : "id",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "personType",
+                "fieldType" : "CONNECTOR",
+                "label" : "personType",
+                "nativeName" : "personType",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "mktoIsPartner",
+                "fieldType" : "CONNECTOR",
+                "label" : "mktoIsPartner",
+                "nativeName" : "mktoIsPartner",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "isLead",
+                "fieldType" : "CONNECTOR",
+                "label" : "isLead",
+                "nativeName" : "isLead",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "mktoIsCustomer",
+                "fieldType" : "CONNECTOR",
+                "label" : "mktoIsCustomer",
+                "nativeName" : "mktoIsCustomer",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "isAnonymous",
+                "fieldType" : "CONNECTOR",
+                "label" : "isAnonymous",
+                "nativeName" : "isAnonymous",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "salutation",
+                "fieldType" : "CONNECTOR",
+                "label" : "salutation",
+                "nativeName" : "salutation",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "firstName",
+                "fieldType" : "CONNECTOR",
+                "label" : "firstName",
+                "nativeName" : "firstName",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "middleName",
+                "fieldType" : "CONNECTOR",
+                "label" : "middleName",
+                "nativeName" : "middleName",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "lastName",
+                "fieldType" : "CONNECTOR",
+                "label" : "lastName",
+                "nativeName" : "lastName",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "email",
+                "fieldType" : "CONNECTOR",
+                "label" : "email",
+                "nativeName" : "email",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "phone",
+                "fieldType" : "CONNECTOR",
+                "label" : "phone",
+                "nativeName" : "phone",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "mobilePhone",
+                "fieldType" : "CONNECTOR",
+                "label" : "mobilePhone",
+                "nativeName" : "mobilePhone",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "fax",
+                "fieldType" : "CONNECTOR",
+                "label" : "fax",
+                "nativeName" : "fax",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "title",
+                "fieldType" : "CONNECTOR",
+                "label" : "title",
+                "nativeName" : "title",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "contactCompany",
+                "fieldType" : "CONNECTOR",
+                "label" : "contactCompany",
+                "nativeName" : "contactCompany",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "originalSourceType",
+                "fieldType" : "CONNECTOR",
+                "label" : "originalSourceType",
+                "nativeName" : "originalSourceType",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "originalSourceInfo",
+                "fieldType" : "CONNECTOR",
+                "label" : "originalSourceInfo",
+                "nativeName" : "originalSourceInfo",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "registrationSourceType",
+                "fieldType" : "CONNECTOR",
+                "label" : "registrationSourceType",
+                "nativeName" : "registrationSourceType",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "registrationSourceInfo",
+                "fieldType" : "CONNECTOR",
+                "label" : "registrationSourceInfo",
+                "nativeName" : "registrationSourceInfo",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "unsubscribed",
+                "fieldType" : "CONNECTOR",
+                "label" : "unsubscribed",
+                "nativeName" : "unsubscribed",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "unsubscribedReason",
+                "fieldType" : "CONNECTOR",
+                "label" : "unsubscribedReason",
+                "nativeName" : "unsubscribedReason",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "doNotCall",
+                "fieldType" : "CONNECTOR",
+                "label" : "doNotCall",
+                "nativeName" : "doNotCall",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "VisitedWebsite",
+                "fieldType" : "CONNECTOR",
+                "label" : "VisitedWebsite",
+                "nativeName" : "VisitedWebsite",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "AttendedWEbinar",
+                "fieldType" : "CONNECTOR",
+                "label" : "AttendedWEbinar",
+                "nativeName" : "AttendedWEbinar",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "AttendedTradeShow",
+                "fieldType" : "CONNECTOR",
+                "label" : "AttendedTradeShow",
+                "nativeName" : "AttendedTradeShow",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              },
+              {
+                "name" : "ClickedAD",
+                "fieldType" : "CONNECTOR",
+                "label" : "ClickedAD",
+                "nativeName" : "ClickedAD",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Leads"
+                  }
+                ]
+              }
+            ]
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        },
+        "manualMappings" : {
+          "mappingList" : [
+            {
+              "fromFieldName" : "customerId",
+              "toField" : {
+                "name" : "id"
+              },
+              "fromFieldNames" : null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2026-07-08 12:23:39 PDT"
+}
