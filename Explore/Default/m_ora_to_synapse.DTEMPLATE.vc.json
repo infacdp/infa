@@ -1,6 +1,5 @@
 {
   "content" : {
-    "description" : "modif source",
     "allowMaxFieldLength" : "false",
     "bigIntConvertType" : "ONLY_BIGINT",
     "documentType" : "MAPPING",
@@ -19,6 +18,7 @@
     ],
     "transformations" : [
       {
+        "description" : "changement de source",
         "augmented" : "false",
         "createTime" : "2022-04-06T06:10:11.960Z",
         "name" : "Oracle",
@@ -3680,5 +3680,5 @@
       }
     ]
   },
-  "vcsExportTime" : "2026-06-07 08:02:57 PDT"
+  "vcsExportTime" : "2026-07-08 10:06:41 PDT"
 }
