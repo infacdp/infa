@@ -253,6 +253,7 @@
         }
       },
       {
+        "description" : "test checkout",
         "augmented" : "false",
         "createTime" : "2026-07-08T19:20:51.734Z",
         "name" : "Target",
@@ -1249,5 +1250,5 @@
       }
     ]
   },
-  "vcsExportTime" : "2026-07-08 12:23:39 PDT"
+  "vcsExportTime" : "2026-07-08 12:34:05 PDT"
 }
