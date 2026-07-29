@@ -683,7 +683,7 @@
           }
         ],
         "dataAdapter" : {
-          "connectionId" : "saas:@aZ9b7TOKvjkh4aO5q2eOk5",
+          "connectionId" : "saas:@1rQ92Y1MX08lFkVwvRihQE",
           "connectionName" : "SAP-S4HANA-Table-Connector-APJCLOUD_Windows",
           "excludeDynamicFileNameField" : "false",
           "objectType" : "SINGLE",
@@ -2308,7 +2308,7 @@
           }
         ],
         "dataAdapter" : {
-          "connectionId" : "saas:@8PBpJDENSJhhausobzuC6E",
+          "connectionId" : "saas:@dNin2glscIokq0Gyolh2Oc",
           "connectionName" : "Snowflake-CDW-v2-informaticapartner-DEMO_WH",
           "excludeDynamicFileNameField" : "false",
           "objectType" : "SINGLE",
@@ -3680,5 +3680,5 @@
       }
     ]
   },
-  "vcsExportTime" : "2026-07-29 07:19:50 PDT"
+  "vcsExportTime" : "2026-07-29 07:26:32 PDT"
 }
